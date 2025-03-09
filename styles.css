@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap'); 
+ 
+@import "reset.css";
+
+body {
+  width: 1000px;
+  height: 935px;
+  background-color: #F4F4F5;
+  color: #2e362e;
+  font-family: "Open Sans", sans-serif;
+}
+
+.music{
+  display: flex;
+}
+.music_screen {
+  width: 360px;
+  height: 795px;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 40px;
+  margin: 70px;
+}
+.music-find-bar {
+  display: flex;
+  justify-content: space-between; 
+  margin: 50px 30px 30px 30px;
+}
+.music-find-bar__column {
+  width: 100%;
+}
+.music-find-bar__column:first-child span {
+  margin-right: 5px;
+}
+
+.music-find-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.music_album{
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.music_album__img{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px tomato;
+}
+.music_album_info{
+  width: 300px;
+  height: 100px;
+}
+.music_album__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px;
+}
+.music_album__text_lg{
+  font-size: 26px;
+  font-weight: 600;
+  color: #323232;
+}
+.music_album__text_sm{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0,0,0,0.3);
+}
+.music_album__fav{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.music_album__fav_shuffle{
+  width: 120px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: #2e362e;
+  margin-right: 5px;
+}
+.music_album__fav_love{
+  width: 120px;
+  height: 45px;
+  border-radius: 45px;
+  background-color: white;  
+  margin-left: 5px;
+}
+.music_album__fav_shuffle_text{
+  color: white;
+  position: absolute;
+  margin-left: 35px;
+  padding-top: 15px;
+}
+.music_album__fav_love_text{
+  margin-left: 20px;
+  position: absolute;
+  padding-top: 15px;
+}
+
+.music_list{
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 20px;
+  border-radius: 15px;
+}
+.music_list_img{
+  width: 50px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_list_img_link{
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.music_list_text{
+  width: 250px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.music_list_info{
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.music_list_text_sm{
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(0,0,0,0.3);
+}
+.music_list_text_bg{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+}
+.music_play{
+  width: 340px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+  border-radius: 40px;
+  background-color: black;
+}
+.music_play_text{
+  width: 200px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  margin-left: 30px;
+}
+.music_play_text_sm{
+  margin-top: 1px;
+  font-weight: 600;
+  font-size: 14px;
+  color: rgba(251, 249, 249, 0.7);
+}
+.music_play_text_bg{
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  color: white;
+}
+
+.music_play_select{
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.music_detail{
+  height: 800px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.music_detail__img{
+  width: 280px;
+  height: 280px;
+  margin-top: 40px;
+}
+.music_detail_img_big{
+  width: 280px;
+  height: 280px;
+  border-radius: 40px;
+}
+.music_detail__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding-top: 20px;
+}
+.music_detail__text_lg{
+  font-size: 26px;
+  font-weight: 600;
+  color: #323232;
+  margin-top: 15px;
+}
+.music_detail__text_sm{
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 16px;
+  color: rgba(0,0,0,0.3);
+}
+
+.music_detail__time {
+  width: 300px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0,0,0,0.5);
+  margin: 10px;
+}
+.music_detail_graph{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.music_detail_graph_start{
+  width: 300px;
+  height: 50px;
+  position:relative;
+}
+.music_detail_graph_past{
+  width:180px;
+  height: 6px;
+  position:absolute;
+  background-color: black;
+  border-radius: 3px 0px 0px 3px;
+  margin-top: -20px;
+}
+
+.music_detail_graph_ing{
+  width: 12px;
+  height: 12px;
+  position:absolute;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  margin-left: 179px;
+  margin-top: -23px;
+}
+
+.music_detail_graph_remain{
+  width:110px;
+  height: 6px;
+  position:absolute;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 0px 3px 3px 0px;
+  margin-left: 189px;
+  margin-top: -20px;
+}
+.music_detail_play{
+  display: flex;
+  align-items: center;
+}
+.music_detail_play_box{
+  width: 300px;
+  height: 100px;
+  position:relative;
+  margin-top: 20px;
+}
+.music_detail_play_prev{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  position:absolute;
+  align-items: center;
+}
+.music_detail_play_prev_repeat{
+  width: 50px;
+  height: 100px;
+}
+.music_detail_play_prev_step{
+  width: 50px;
+  height: 100px;
+  padding-left: 30px;
+}
+
+.music_detail_play_ing{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:relative;
+}
+.music_detail_play_ing_box{
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  margin-left: 110px;
+  margin-top: -70px;
+}
+.music_detail_play_ing_circle{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position:absolute;
+  background-color: black;
+}
+
+.music_detail_play_ing_circle_icon{
+  position:absolute;
+  justify-content: center;
+}
+
+.music_detail_play_next{
+  width: 120px;
+  height: 100px;
+  display: flex;
+}
+
+.music-music_detail_play_next-bar__column:last-child {
+  justify-content: flex-end;
+  align-items: center;
+}
+.music_detail_play_next_step{
+  width: 50px;
+  height: 100px;
+  padding-left: 20px;
+.music_detail_play_next_sshuffle{
+  width: 50px;
+  height: 100px;
+}
